@@ -321,8 +321,6 @@ def view_books():
 
     print("\nALL BOOKS")
     books = load_books()
-    print(books)
-
     if not books:
         print("No books found in the library.")
         return

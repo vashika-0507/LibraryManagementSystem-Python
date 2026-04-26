@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67933e6a-73a3-4360-85be-18f6bae021da" name="Changes" comment="commit msg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.py" beforeDir="false" afterPath="$PROJECT_DIR$/library.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +126,8 @@
       <workItem from="1776952435675" duration="4606000" />
       <workItem from="1777029769720" duration="18637000" />
       <workItem from="1777106424111" duration="672000" />
+      <workItem from="1777182950686" duration="6714000" />
+      <workItem from="1777231033016" duration="1675000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -200,7 +201,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776781369163</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit msg">
+      <option name="closed" value="true" />
+      <created>1777182975034</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777182975034</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit msg">
+      <option name="closed" value="true" />
+      <created>1777231918145</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1777231918145</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +241,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit msg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LibraryManagementSystem$Library.coverage" NAME="Library Coverage Results" MODIFIED="1776261729158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\USER\PycharmProjects\LibraryManagementSystem" />
+    <SUITE FILE_PATH="coverage/LibraryManagementSystem$Library.coverage" NAME="Library Coverage Results" MODIFIED="1777225704063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\USER\PycharmProjects\LibraryManagementSystem" />
     <SUITE FILE_PATH="coverage/LibraryManagementSystem$library.coverage" NAME="library Coverage Results" MODIFIED="1776261277063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
