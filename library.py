@@ -144,9 +144,11 @@ def validate_price(price_str):
         val = float(price_str)
         if val < 0:
             return False
-        # Check it has at most 2 decimal places
+        # Check it has 2 decimal places
         parts = price_str.split(".")
-        if len(parts) == 2 and len(parts[1]) > 2:
+        if len(parts) != 2:
+            return False
+        if len(parts[1]) != 2:
             return False
         return True
     except ValueError:
@@ -154,9 +156,7 @@ def validate_price(price_str):
 
 # add book
 def add_book():
-    print("\nAdd Book")
     books = load_books()
-
     # Book id
     while True:
         book_id = input("Enter Book ID: ").strip().upper()
@@ -217,7 +217,6 @@ def add_book():
 
 #edit book
 def edit_book():
-    print("\nEDIT / UPDATE BOOK")
     books = load_books()
 
     if not books:
@@ -343,7 +342,6 @@ def view_books():
 
 # search
 def search_book():
-    print("\nSEARCH BOOK")
     print("Search by:")
     print("1. Book ID")
     print("2. Title")
@@ -360,16 +358,16 @@ def search_book():
     results = []
 
     if choice == "1":
-        search_term = input("Enter Book ID: ").strip().upper()
-        results = [b for b in books if b[0].upper() == search_term]
+        search_id = input("Enter Book ID: ").strip().upper()
+        results = [b for b in books if b[0].upper() == search_id]
 
     elif choice == "2":
-        search_term = input("Enter Title : ").strip().lower()
-        results = [b for b in books if search_term in b[1].lower()]
+        search_title = input("Enter Title : ").strip().lower()
+        results = [b for b in books if search_title in b[1].lower()]
 
     elif choice == "3":
-        search_term = input("Enter Author: ").strip().lower()
-        results = [b for b in books if search_term in b[3].lower()]
+        search_author = input("Enter Author: ").strip().lower()
+        results = [b for b in books if search_author in b[3].lower()]
 
     else:
         print("Invalid option.")
@@ -410,7 +408,6 @@ def validate_student_name(name):
 
 # ADD STUDENT
 def add_student():
-    print("\nADD STUDENT")
     students = load_students()
     #Student ID
     while True:
@@ -441,7 +438,6 @@ def add_student():
 
 # VIEW ALL STUDENTS
 def view_students():
-    print("\n ALL STUDENTS ")
     students = load_students()
 
     if not students:
@@ -492,7 +488,6 @@ def validate_date(date_str):
 
 #ISSUE BOOK
 def issue_book():
-    print("\nISSUE BOOK")
     books = load_books()
     students = load_students()
     transactions = load_transactions()
@@ -575,8 +570,6 @@ def issue_book():
 
 #RETURN BOOK
 def return_book():
-    print("\nRETURN BOOK")
-
     books = load_books()
     students = load_students()
     transactions = load_transactions()
